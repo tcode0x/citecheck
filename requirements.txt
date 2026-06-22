@@ -1,0 +1,7 @@
+# --- Bắt buộc ---
+requests>=2.28
+python-docx>=1.1.0      # đọc file .docx
+
+# --- Hỗ trợ PDF (cài để dùng --input *.pdf) ---
+pymupdf>=1.23.0         # đọc PDF (ưu tiên, nhanh & chính xác)
+pdfplumber>=0.10.0      # PDF fallback (tùy chọn, có thể bỏ nếu đã có pymupdf)
