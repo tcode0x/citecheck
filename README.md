@@ -1,4 +1,6 @@
-# citecheck tools — Trình kiểm tra trích dẫn cho bài báo khoa học
+# citecheck — Trình kiểm tra trích dẫn cho bài báo khoa học
+
+> **Repo:** https://github.com/tcode0x/citecheck
 
 Kiểm tra trích dẫn của bài báo từ **`.docx`**, **`.pdf`**, **`.txt`/`.md`**, hoặc **`.tex` + `.bib`**.
 Tự phát hiện: tài liệu **trùng lặp** (cùng DOI/tiêu đề nhưng khác số), trích dẫn **không có mục**,
@@ -24,10 +26,10 @@ python --version        # hoặc: python3 --version
 
 ## 2. Cài đặt
 
-### Cách A — Clone từ git (nếu bạn đã đẩy repo lên)
+### Cách A — Clone từ git
 
 ```bash
-git clone https://github.com/<your-username>/citecheck.git
+git clone https://github.com/tcode0x/citecheck.git
 cd citecheck
 
 # Tạo môi trường ảo (khuyến nghị)
@@ -48,7 +50,7 @@ git add citecheck.py requirements.txt README.md .gitignore
 git commit -m "init citecheck"
 # (tùy chọn) đẩy lên GitHub:
 git branch -M main
-git remote add origin https://github.com/<your-username>/citecheck.git
+git remote add origin https://github.com/tcode0x/citecheck.git
 git push -u origin main
 
 python -m venv .venv && source .venv/bin/activate
@@ -176,3 +178,11 @@ Xem `example_report.md` để thấy định dạng báo cáo đầy đủ.
 3. Bật `--api`, lọc các dòng `TITLE_MISMATCH / YEAR_MISMATCH / NOT_FOUND` trong `report.csv`,
    bấm link để kiểm tra từng cái.
 4. Sửa `.bib`/danh mục, chạy lại tới khi sạch cảnh báo.
+
+---
+
+## 9. Tác giả & giấy phép
+
+- **Tác giả:** Hieu Nd
+- **Repo:** https://github.com/tcode0x/citecheck
+- Đóng góp / báo lỗi: mở issue hoặc pull request trên repo.
